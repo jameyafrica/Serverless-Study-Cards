@@ -66,6 +66,21 @@ _(Link coming soon — added in the final project phase.)_
 
 ---
 
+## 🗂️ Data Model
+
+**Table:** `StudyCards`
+**Partition Key:** `userId` (String)
+**Sort Key:** `cardId` (String)
+
+| Attribute | Type | Description |
+|---|---|---|
+| userId | String | Owner of the card (hardcoded to "demo-user" for this project) |
+| cardId | String | Unique identifier (UUID) for the flashcard |
+| question | String | The flashcard's question text |
+| answer | String | The flashcard's answer text |
+| deckName | String | Category/deck the card belongs to |
+| createdAt | String | ISO-8601 timestamp of creation |
+
 ## 📄 License
 
 This project is licensed under the MIT License — see the [LICENSE](./LICENSE) file for details.
