@@ -20,6 +20,9 @@ _(Diagram coming soon — will show S3 → API Gateway → Lambda → DynamoDB)_
 
 ---
 
+AWS Configuration
+**AWS Region:** eu-west-1 (Ireland)
+
 ## ✨ Features
 
 - [ ] Create a new flashcard (question + answer)
