@@ -81,6 +81,11 @@ _(Link coming soon — added in the final project phase.)_
 | deckName | String | Category/deck the card belongs to |
 | createdAt | String | ISO-8601 timestamp of creation |
 
+docs: document Lambda execution role (StudyCardsLambdaExecutionRole)
+
+- Added IAM role scoped to DynamoDB StudyCards table only
+- Documented least-privilege policy in README under Security/Architecture
+
 ## 📄 License
 
 This project is licensed under the MIT License — see the [LICENSE](./LICENSE) file for details.
