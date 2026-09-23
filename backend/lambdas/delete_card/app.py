@@ -6,13 +6,16 @@ table = dynamodb.Table('StudyCards')
 
 def lambda_handler(event, context):
     path_params = event.get('pathParameters') or {}
-    user_id = path_params.get('userId')
     card_id = path_params.get('cardId')
 
-    if not user_id or not card_id:
+    # TODO: replace with real authenticated user ID once login/auth exists.
+    # No auth system yet — single hardcoded user for now (matches project scope).
+    user_id = 'demo-user'
+
+    if not card_id:
         return {
             'statusCode': 400,
-            'body': json.dumps({'error': 'userId and cardId are required'})
+            'body': json.dumps({'error': 'cardId is required'})
         }
 
     table.delete_item(
